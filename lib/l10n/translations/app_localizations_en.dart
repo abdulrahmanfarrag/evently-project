@@ -22,4 +22,40 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get letsGo => 'Let\'s Go';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get forgetPassword => 'Forget Password?';
+
+  @override
+  String get login => 'Login';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account?';
+
+  @override
+  String get createAccount => 'Create Account';
+
+  @override
+  String get or => 'Or';
+
+  @override
+  String get loginWithGoogle => 'Login with Google';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get register => 'Register';
+
+  @override
+  String get rePassword => 'Re Password';
+
+  @override
+  String get alreadyHaveAccount => 'Already have an account?';
 }

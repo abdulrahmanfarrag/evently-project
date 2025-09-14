@@ -3,5 +3,17 @@
   "personalizeYourExperienceMessage": "اختر السمة واللغة المفضلة لديك للبدء بتجربة مريحة ومصممة خصيصًا تناسب أسلوبك.",
   "language": "اللغة",
   "theme": "السمة",
-  "letsGo": "لنبدأ"
+  "letsGo": "لنبدأ",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "forgetPassword": "هل نسيت كلمة المرور؟",
+  "login": "تسجيل الدخول",
+  "dontHaveAccount": "ليس لديك حساب؟",
+  "createAccount": "إنشاء حساب",
+  "or": "أو",
+  "loginWithGoogle": "تسجيل الدخول باستخدام جوجل",
+  "name": "الاسم",
+  "rePassword": "أعد إدخال كلمة المرور",
+  "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+  "register": "تسجيل جديد"
 }

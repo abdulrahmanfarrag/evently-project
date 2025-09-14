@@ -1,6 +1,7 @@
 import 'package:evently_c16_sun/core/widgets/language_switch.dart';
 import 'package:evently_c16_sun/core/widgets/theme_switch.dart';
 import 'package:evently_c16_sun/l10n/translations/app_localizations.dart';
+import 'package:evently_c16_sun/ui/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class SetupScreen extends StatelessWidget {
@@ -58,7 +59,9 @@ class SetupScreen extends StatelessWidget {
               ),
               SizedBox(height: 16),
               FilledButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, LoginScreen.routeName);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [Text(AppLocalizations.of(context)!.letsGo)],

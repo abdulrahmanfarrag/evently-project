@@ -14,6 +14,11 @@ abstract class AppTheme {
       surface: AppColors.lightBlue,
       onSurface: AppColors.black,
     ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: AppColors.purple,
+      selectedItemColor: AppColors.lightBlue,
+      unselectedItemColor: AppColors.lightBlue,
+    ),
     filledButtonTheme: FilledButtonThemeData(
       style: FilledButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -100,7 +105,11 @@ abstract class AppTheme {
         textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
     ),
-
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: AppColors.darkPurple,
+      selectedItemColor: AppColors.offWhite,
+      unselectedItemColor: AppColors.offWhite,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),

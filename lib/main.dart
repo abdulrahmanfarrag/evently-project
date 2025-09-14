@@ -1,21 +1,33 @@
 import 'package:evently_c16_sun/core/providers/app_config_provider.dart';
 import 'package:evently_c16_sun/core/theme/app_theme.dart';
 import 'package:evently_c16_sun/l10n/translations/app_localizations.dart';
+import 'package:evently_c16_sun/ui/auth/login_screen.dart';
+import 'package:evently_c16_sun/ui/auth/register_screen.dart';
+import 'package:evently_c16_sun/ui/home/home_screen.dart';
 import 'package:evently_c16_sun/ui/setup_screen/setup_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  var user = FirebaseAuth.instance.currentUser;
   runApp(
     ChangeNotifierProvider(
       create: (context) => AppConfigProvider(),
-      child: MyApp(),
+      child: MyApp(loggedIn: user != null),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  bool loggedIn;
+
+  MyApp({required this.loggedIn, super.key});
 
   late AppConfigProvider appConfigProvider;
 
@@ -30,8 +42,13 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       themeMode: appConfigProvider.themeMode,
-      routes: {SetupScreen.routeName: (_) => SetupScreen()},
-      initialRoute: SetupScreen.routeName,
+      routes: {
+        SetupScreen.routeName: (_) => SetupScreen(),
+        LoginScreen.routeName: (_) => LoginScreen(),
+        RegisterScreen.routeName: (_) => RegisterScreen(),
+        HomeScreen.routeName: (_) => HomeScreen(),
+      },
+      initialRoute: loggedIn ? HomeScreen.routeName : SetupScreen.routeName,
     );
   }
 }
