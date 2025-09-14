@@ -3,5 +3,17 @@
   "personalizeYourExperienceMessage": "Choose your preferred theme and language to get started with a comfortable, tailored experience that suits your style.",
   "language": "Language",
   "theme": "Theme",
-  "letsGo": "Let's Go"
+  "letsGo": "Let's Go",
+  "email" : "Email",
+  "password" : "Password",
+  "forgetPassword" : "Forget Password?",
+  "login" : "Login",
+  "dontHaveAccount" : "Don't have an account?",
+  "createAccount" : "Create Account",
+  "or": "Or",
+  "loginWithGoogle" : "Login with Google",
+  "name" : "Name",
+  "register": "Register",
+  "rePassword" : "Re Password",
+  "alreadyHaveAccount" : "Already have an account?"
 }
