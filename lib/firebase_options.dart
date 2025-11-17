@@ -41,48 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBZ-ryK8EqTl7-toBxTK_WVFe1QZQXtNcg',
-    appId: '1:452187876289:web:3114f680b9c2a8ebba9d40',
-    messagingSenderId: '452187876289',
-    projectId: 'evently-c16-sun',
-    authDomain: 'evently-c16-sun.firebaseapp.com',
-    storageBucket: 'evently-c16-sun.firebasestorage.app',
-    measurementId: 'G-VCC06HHNCS',
+    apiKey: 'AIzaSyA5oEDOqJrBbcO8owwrs5Gz53-S6RLGsMc',
+    appId: '1:584017017251:web:dea1b8deddab06d9fd8216',
+    messagingSenderId: '584017017251',
+    projectId: 'evently-c16-project',
+    authDomain: 'evently-c16-project.firebaseapp.com',
+    storageBucket: 'evently-c16-project.firebasestorage.app',
+    measurementId: 'G-GV91BG0KV8',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD43wFw391OxGf9Q6kpBQt5K8oYMBDCOpg',
-    appId: '1:452187876289:android:02d5e0230a174450ba9d40',
-    messagingSenderId: '452187876289',
-    projectId: 'evently-c16-sun',
-    storageBucket: 'evently-c16-sun.firebasestorage.app',
+    apiKey: 'AIzaSyBlVEjs23_6IUrOnkghPuWN4bW-giG1q44',
+    appId: '1:584017017251:android:8dab1afac7d11d6bfd8216',
+    messagingSenderId: '584017017251',
+    projectId: 'evently-c16-project',
+    storageBucket: 'evently-c16-project.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDKObDgxY_w4PfA3v82VAezl5HO2Ost10U',
-    appId: '1:452187876289:ios:3bdc3c352fbde32eba9d40',
-    messagingSenderId: '452187876289',
-    projectId: 'evently-c16-sun',
-    storageBucket: 'evently-c16-sun.firebasestorage.app',
+    apiKey: 'AIzaSyBGpWW9wbCahtctRDuyXtsED11Ap2PbpnI',
+    appId: '1:584017017251:ios:964b6fddeb3166f9fd8216',
+    messagingSenderId: '584017017251',
+    projectId: 'evently-c16-project',
+    storageBucket: 'evently-c16-project.firebasestorage.app',
+    iosClientId: '584017017251-f5hp2el5jnjkvihvog88duusibgo5hbb.apps.googleusercontent.com',
     iosBundleId: 'com.example.eventlyC16Sun',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDKObDgxY_w4PfA3v82VAezl5HO2Ost10U',
-    appId: '1:452187876289:ios:3bdc3c352fbde32eba9d40',
-    messagingSenderId: '452187876289',
-    projectId: 'evently-c16-sun',
-    storageBucket: 'evently-c16-sun.firebasestorage.app',
+    apiKey: 'AIzaSyBGpWW9wbCahtctRDuyXtsED11Ap2PbpnI',
+    appId: '1:584017017251:ios:964b6fddeb3166f9fd8216',
+    messagingSenderId: '584017017251',
+    projectId: 'evently-c16-project',
+    storageBucket: 'evently-c16-project.firebasestorage.app',
+    iosClientId: '584017017251-f5hp2el5jnjkvihvog88duusibgo5hbb.apps.googleusercontent.com',
     iosBundleId: 'com.example.eventlyC16Sun',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBZ-ryK8EqTl7-toBxTK_WVFe1QZQXtNcg',
-    appId: '1:452187876289:web:6858470ce5ab7199ba9d40',
-    messagingSenderId: '452187876289',
-    projectId: 'evently-c16-sun',
-    authDomain: 'evently-c16-sun.firebaseapp.com',
-    storageBucket: 'evently-c16-sun.firebasestorage.app',
-    measurementId: 'G-98MF4TSNST',
+    apiKey: 'AIzaSyA5oEDOqJrBbcO8owwrs5Gz53-S6RLGsMc',
+    appId: '1:584017017251:web:0072f56b4b36b7b2fd8216',
+    messagingSenderId: '584017017251',
+    projectId: 'evently-c16-project',
+    authDomain: 'evently-c16-project.firebaseapp.com',
+    storageBucket: 'evently-c16-project.firebasestorage.app',
+    measurementId: 'G-P3NLXQ9N9Q',
   );
+
 }

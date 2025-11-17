@@ -12,7 +12,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get personalizeYourExperience => 'Personalize Your Experience';
 
   @override
-  String get personalizeYourExperienceMessage => 'Choose your preferred theme and language to get started with a comfortable, tailored experience that suits your style.';
+  String get personalizeYourExperienceMessage =>
+      'Choose your preferred theme and language to get started with a comfortable, tailored experience that suits your style.';
 
   @override
   String get language => 'Language';

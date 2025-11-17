@@ -1,9 +1,11 @@
+
 import 'package:evently_c16_sun/core/providers/app_config_provider.dart';
 import 'package:evently_c16_sun/core/theme/app_theme.dart';
 import 'package:evently_c16_sun/l10n/translations/app_localizations.dart';
 import 'package:evently_c16_sun/ui/auth/login_screen.dart';
 import 'package:evently_c16_sun/ui/auth/register_screen.dart';
 import 'package:evently_c16_sun/ui/home/home_screen.dart';
+import 'package:evently_c16_sun/ui/onboarding_screen/onboarding_screen.dart';
 import 'package:evently_c16_sun/ui/setup_screen/setup_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -11,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'firebase_options.dart';
+import 'ui/events_management/events_management.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,8 +50,11 @@ class MyApp extends StatelessWidget {
         LoginScreen.routeName: (_) => LoginScreen(),
         RegisterScreen.routeName: (_) => RegisterScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
+        EventManagementScreen.routeName: (_) => EventManagementScreen(),
+        OnboardingScreen.routeName: (_) => OnboardingScreen(),
       },
       initialRoute: loggedIn ? HomeScreen.routeName : SetupScreen.routeName,
     );
   }
 }
+//loggedIn ? HomeScreen.routeName : SetupScreen.routeName,

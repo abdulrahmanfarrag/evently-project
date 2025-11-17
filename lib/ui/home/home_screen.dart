@@ -1,3 +1,4 @@
+
 import 'package:evently_c16_sun/core/providers/app_config_provider.dart';
 import 'package:evently_c16_sun/core/theme/app_colors.dart';
 import 'package:evently_c16_sun/ui/home/tabs/favorite_tab.dart';
@@ -7,6 +8,8 @@ import 'package:evently_c16_sun/ui/home/tabs/profile_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:provider/provider.dart';
+
+import '../events_management/events_management.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home';
@@ -30,13 +33,15 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(children: [Expanded(child: tabs[selectedIndex])]),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, EventManagementScreen.routeName);
+        },
         elevation: 0,
         foregroundColor: AppColors.offWhite,
         backgroundColor:
-            appConfigProvider.isDark()
-                ? AppColors.darkPurple
-                : AppColors.purple,
+        appConfigProvider.isDark()
+            ? AppColors.darkPurple
+            : AppColors.purple,
         shape: CircleBorder(
           side: BorderSide(width: 5, color: AppColors.offWhite),
         ),
@@ -46,11 +51,14 @@ class _HomeScreenState extends State<HomeScreen> {
         type: BottomNavigationBarType.fixed,
         onTap: (index) {
           if (index == 2) {
+            Navigator.pushNamed(context, EventManagementScreen.routeName);
+
             return;
           }
           if (index == 3 || index == 4) {
             index--;
           }
+
           setState(() {
             selectedIndex = index;
           });
@@ -71,16 +79,16 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(
               Icons.add,
               color:
-                  appConfigProvider.isDark()
-                      ? AppColors.darkPurple
-                      : AppColors.purple,
+              appConfigProvider.isDark()
+                  ? AppColors.darkPurple
+                  : AppColors.purple,
             ),
             activeIcon: Icon(
               Icons.add,
               color:
-                  appConfigProvider.isDark()
-                      ? AppColors.darkPurple
-                      : AppColors.purple,
+              appConfigProvider.isDark()
+                  ? AppColors.darkPurple
+                  : AppColors.purple,
             ),
 
             label: "",

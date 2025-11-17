@@ -5,9 +5,11 @@ import 'package:evently_c16_sun/l10n/translations/app_localizations.dart';
 import 'package:evently_c16_sun/ui/auth/register_screen.dart';
 import 'package:evently_c16_sun/ui/home/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String routeName = "/login";
+
 
   const LoginScreen({super.key});
 
@@ -17,6 +19,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool passwordVisible = false;
+
 
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -175,7 +178,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () async {
+                var user = await FirebaseAuthService.signInWithGoogle();
+                print (user.user?.displayName);
+                print (user.user?.email);
+
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

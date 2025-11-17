@@ -12,7 +12,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get personalizeYourExperience => 'خصّص تجربتك';
 
   @override
-  String get personalizeYourExperienceMessage => 'اختر السمة واللغة المفضلة لديك للبدء بتجربة مريحة ومصممة خصيصًا تناسب أسلوبك.';
+  String get personalizeYourExperienceMessage =>
+      'اختر السمة واللغة المفضلة لديك للبدء بتجربة مريحة ومصممة خصيصًا تناسب أسلوبك.';
 
   @override
   String get language => 'اللغة';
