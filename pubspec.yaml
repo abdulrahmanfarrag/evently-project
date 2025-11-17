@@ -40,8 +40,14 @@ dependencies:
     sdk: flutter
   intl: any
   firebase_core: ^4.1.0
-  firebase_auth: ^6.0.2
+  firebase_auth: ^6.1.1
   icons_plus: ^5.0.0
+  cloud_firestore: ^6.0.1
+  google_sign_in: ^7.2.0
+  flutter_native_splash: ^2.4.7
+  introduction_screen:
+  google_maps_flutter: ^2.14.0
+
 
 dev_dependencies:
   flutter_test:

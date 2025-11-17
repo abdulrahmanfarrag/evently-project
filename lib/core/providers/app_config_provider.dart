@@ -17,4 +17,8 @@ class AppConfigProvider extends ChangeNotifier {
   bool isDark() {
     return themeMode == ThemeMode.dark;
   }
+
+  bool isEn() {
+    return locale == "en";
+  }
 }
